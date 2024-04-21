@@ -65,9 +65,9 @@ A News website which gives latest news about India. This website Build using Pla
 <br/>
 ## UI of the Website
 | Drop Down Menu 
-| ![Screenshot (9)](https://github.com/abhishekraicgc/news-website/assets/113430920/750bb7b4-72d1-4d8c-b62a-45c7c08fa450)
+|![Screenshot (9)](https://github.com/abhishekraicgc/news-website/assets/113430920/750bb7b4-72d1-4d8c-b62a-45c7c08fa450)
 | Footer 
-| ![Screenshot (8)](https://github.com/abhishekraicgc/news-website/assets/113430920/eb21d712-4b44-4e61-8d09-33cda1053641)
+|![Screenshot (8)](https://github.com/abhishekraicgc/news-website/assets/113430920/eb21d712-4b44-4e61-8d09-33cda1053641)
 
 
 <br/>
