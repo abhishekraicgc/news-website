@@ -59,26 +59,16 @@ A News website which gives latest news about India. This website Build using Pla
   <br />
 
 ## Some of image of my project while doing project:
-
- Create Static web app 
-![Screenshot (280)](https://user-images.githubusercontent.com/87645745/178142571-42533c3f-94e9-417c-9d50-10af088d9dfe.png) 
-|![Screenshot (280)](https://user-images.githubusercontent.com/87645745/178142572-54ffee0d-7245-4f80-88de-1053586b704c.png) | 
-|-
-| Deploy project
-| ![Screenshot (282)](https://user-images.githubusercontent.com/87645745/178142576-1a76a2d6-b0f8-450d-98e7-561356526847.png)
-| Resource of the project
-| ![Screenshot (278)](https://user-images.githubusercontent.com/87645745/178142579-846a62ac-6fbc-41c8-94cd-2f1e5d7f67ed.png)
+![Screenshot (7)](https://github.com/abhishekraicgc/news-website/assets/113430920/bd9f7708-1d0c-40e3-a907-1d3f442434b3)
+![Screenshot (10)](https://github.com/abhishekraicgc/news-website/assets/113430920/cd0c4f39-76e0-467d-bbdc-6706d040bbc9)
 
 <br/>
 ## UI of the Website
+| Drop Down Menu 
+| ![Screenshot (9)](https://github.com/abhishekraicgc/news-website/assets/113430920/750bb7b4-72d1-4d8c-b62a-45c7c08fa450)
+| Footer 
+| ![Screenshot (8)](https://github.com/abhishekraicgc/news-website/assets/113430920/eb21d712-4b44-4e61-8d09-33cda1053641)
 
-|![Screenshot (280)](https://user-images.githubusercontent.com/87645745/177340164-6b3894e6-01b0-4bec-9472-c56f557f7089.png) | 
-|-
-| Loading Page 
-| ![Screenshot (282)](https://user-images.githubusercontent.com/87645745/177339951-a70101f3-c830-4661-827b-76624c4dec3f.png)
-| Home Page
-| ![Screenshot (278)](https://user-images.githubusercontent.com/87645745/177340746-f666e6a6-becd-49f9-b262-beaed5c3ba43.png)
-| Responsive
 
 <br/>
 ## API Reference
