@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top News</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="/img/favicon.png" sizes="32x32">
+    <!-- Bootsratp CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/manifest.json" />
+
+</head>
+
+<body>
+    <!-- This is Bootsratp Nav bar -->
+    <nav id="navbar">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Top News</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html" aria-current="page" onclick="getNews('all')">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Category
+                            </a>
+                            <ul id="webList" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li onclick="sendCategory(this.id)" id="0"><a class="dropdown-item"
+                                        href="#">National</a>
+                                </li>
+                                <li onclick="sendCategory(this.id)" id="1"><a class="dropdown-item"
+                                        href="#">Business</a>
+                                </li>
+                                <li onclick="sendCategory(this.id)" id="2"><a class="dropdown-item" href="#">Sport</a>
+                                </li>
+                                <li onclick="sendCategory(this.id)" id="3"><a class="dropdown-item" href="#">World</a>
+                                </li>
+                                <li onclick="sendCategory(this.id)" id="4"><a class="dropdown-item"
+                                        href="#">Politics</a>
+                                </li>
+                                <li onclick="sendCategory(this.id)" id="5"><a class="dropdown-item"
+                                        href="#">Technology</a>
+                                </li>
+                                <li onclick="sendCategory(this.id)" id="6"><a class="dropdown-item" href="#">Startup</a>
+                                </li>
+                                <li onclick="sendCategory(this.id)" id="7"><a class="dropdown-item"
+                                        href="#">Entertainment</a>
+                                </li>
+                                <li onclick="sendCategory(this.id)" id="8"><a class="dropdown-item"
+                                        href="#">Miscellaneous</a>
+                                </li>
+                                <li onclick="sendCategory(this.id)" id="9"><a class="dropdown-item" href="#">Hatke</a>
+                                </li>
+                                <li onclick="sendCategory(this.id)" id="10"><a class="dropdown-item"
+                                        href="#">Science</a>
+                                </li>
+                                <li onclick="sendCategory(this.id)" id="11"><a class="dropdown-item"
+                                        href="#">Automobile</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <header class="showcase">
+        <div class="container">
+            <div class="text-content">
+                <p class="sports-category">
+                    <a href= "https://www.india.com/sports/">Sports</a>
+                </p>
+                <h1>Some Sports Article</h1>
+                <p>
+                    WTC Final 2023: 'Sometimes it can happen', Glenn McGrath on India's capitulation against Australia
+                    "Sometimes, it can happen like that. Yeah, conditions in England are a lot different to what Indian cricket has been playing in. 
+                    Sometimes that happens that way, it's called that bit of dressing room pressure," McGrath said.
+                </p>
+                <a href="https://www.firstpost.com">Read More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- This is basic header of website -->
+    <div class="head container">
+        <h3> <span class="badge text-bg-primary">Latest  News:</span></h3>
+    </div>
+    <!-- This is div where all the News are Fetched from API -->
+    <div id="newsBox" class="container"></div>
+    <div id="spinner" class="mySpin spinner-border text-warning"></div>
+    <!-- This is Basic Dark Fotter -->
+    <footer id="sticky-footer" class="flex-shrink-0 py-2 bg-dark text-white-50">
+        <div class="container">
+            <div class="footer">
+                <article>
+                    <div class="logo">
+                        <i class="fas fa-globe fa-2x"></i>
+                        <h2>Top<span>News</span></h2>
+                    </div>
+                    <p>
+                        Join our news website to get latest news and information very first and stay 
+                        updated with new givernment jobs vacancies and many more.
+                        We are here to provide you the latest news and updates into various categories 
+                        such as business, science, sports, and many more. 
+                    </p>
+                </article>
+
+                <article>
+                    <h4>EMAIL NEWSLETTER</h4>
+                    <p>Please enter your email here for more information.</p>
+                    <input type="email" placeholder="Enter Email..." />
+                    <a href="#">Subscribe</a>
+                </article>
+
+                <article>
+                    <h5>SITE LINKS</h5>
+                    <p>Help & Support</p>
+                    <p>Privacy Policy</p>
+                    <p>About Us</p>
+                    <p>Contact</p>
+                </article>
+
+                <article>
+                    <h4>JOIN OUR CLUB</h4>
+                    <p>
+                        Join our news website to get latest news and information very first and stay 
+                        updated with new givernment jobs vacancies and many more. 
+                    </p>
+                    <a href="#">Join Now</a>
+                </article>
+            </div>
+            <br>
+                <p>Copyright © 2024 Abhishek Rai. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Bootsratp js -->
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
